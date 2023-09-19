@@ -1,0 +1,31 @@
+{
+  "name": "chimimoryo-client",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --ext .ts .",
+    "format": "prettier --write \"**/*.ts\"",
+    "check:format": "prettier --check \"**/*.ts\"",
+    "check": "pnpm lint && pnpm check:format && pnpm build",
+    "prepare": "node ./scripts/prepare.js"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "autoprefixer": "^10.4.15",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "nuxt": "^3.7.3",
+    "postcss": "^8.4.29",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.1",
+    "tailwindcss": "^3.3.3"
+  }
+}
