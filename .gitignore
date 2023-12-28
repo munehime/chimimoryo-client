@@ -1,23 +1,20 @@
 ### NodeJS
 
-apps/*
-!apps/narukami
-
-libs/database
+# Services
+apps/accounts
+apps/akari-hoshizaki
+apps/closed
 
 # Testing
-/coverage
+coverage/
 
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
-.cache
-dist
+# Svetle Kit
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
 
 # Production
-/build
+build/
+dist/
 
 # Misc
 .DS_Store
@@ -121,6 +118,10 @@ out
 .nuxt
 dist
 
+# SveltKit build / generate output
+.svelte-kit
+package/
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
@@ -158,6 +159,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# turbo
+.turbo
 
 ### JetBrains
 
